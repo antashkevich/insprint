@@ -1,0 +1,65 @@
+<section class="wr-works">
+  <div class="container">
+    <div class="row flex-column align-items-center">
+      <h2 class="main-title">Как это работает?</h2>
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="amateur-tab" data-toggle="tab" href="#amateur" role="tab" aria-controls="amateur" aria-selected="true">Для фотолюбителей</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="professional-tab" data-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">Для фотографов</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="amateur" role="tabpanel" aria-labelledby="amateur-tab">
+          <ul class="d-flex justify-content-between align-items-start">
+            <li class="d-flex flex-column justify-content-between align-items-center">
+              <h3 class="content-title">1. Выбираете фото</h3>
+              <p>У нас большой выбор фотографов и их прекрасных фотографий</p>
+            </li>
+            <li class="d-flex flex-column justify-content-between align-items-center">
+              <h3 class="content-title">2. Оплачиваете</h3>
+              <p>Также у нас куча способов как это оплатить</p>
+            </li>
+            <li class="d-flex flex-column justify-content-between align-items-center">
+              <h3 class="content-title">3. Получаете заказ</h3>
+              <p>Уже через 2 дня распечатанные фото окажутся у вас в руках</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="professional" role="tabpanel" aria-labelledby="professional-tab">
+          <ul class="d-flex justify-content-between align-items-center">
+            <li class="d-flex flex-column justify-content-between align-items-center">
+              <h3 class="content-title">1. Делаете фото</h3>
+              <p>У нас большой выбор фотографов и их прекрасных фотографий</p>
+            </li>
+            <li class="d-flex flex-column justify-content-between align-items-center">
+              <h3 class="content-title">2. Загружаете</h3>
+              <p>Также у нас куча способов как это оплатить</p>
+            </li>
+            <li class="d-flex flex-column justify-content-between align-items-center">
+              <h3 class="content-title">3. Получаете деньги</h3>
+              <p>Уже через 2 дня распечатанные фото окажутся у вас в руках</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="video-container">
+        <video id="video" class="video" loop poster="./img/video/video-poster.png">
+          <source src="./img/video/video.mp4" type="video/mp4">
+        </video>
+        <div class="controls">
+          <progress id="progress" max="100" value="0"></progress>
+          <div class="buttons">
+              <button id="play-pause" class="play-pause"></button>
+              <button id="stop" class="stop"></button>
+              <button id="mute" class="mute"></button>
+          </div>
+        </div>
+        <button class="btn-play-main">
+          <img srcset="./img/video/play_2x.png 2x ,./img/video/play_3x.png 3x" src="./img/video/play.png" alt="logotype">
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

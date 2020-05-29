@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    
+    <link rel="stylesheet" href="css/main.min.css">
+    
+    <title>main page</title>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <a href="#" class="logo col-lg-3">
+            <img srcset="./img/logo/logo_2x.png 2x ,./img/logo/logo_3x.png 3x" src="./img/logo/logo.png" alt="logotype">
+          </a>
+          <nav class="navbar navbar-expand-lg col-lg-6">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Как это работает?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Фотографы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Доставка и оплата</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    
+          <div class="search-block d-flex align-items-center justify-content-lg-end col-lg-3">
+            <button>
+              <svg class="search-block__icon">
+                <use xlink:href="./svg/sprite.svg#track"></use>
+              </svg>
+              <span class="search-block__title">Отследить заказ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="wr-intro">
+      <div class="container">
+        <div class="row flex-column align-items-center">
+          <h1 class="main-title">Просто напечатать работу вашего любимого фотографа</h1>
+          <p class="subtitle">Печатайте и получайте фотографии ваших любимых фотографов прямо в руки</p>
+        </div>
+    
+        <div class="btns-container d-flex align-items-center justify-content-lg-center">
+          <button type="button">Каталог фотографов</button>
+          <button type="button">Как мы работаем</button>
+        </div>
+    
+        <picture>
+          <source srcset="./img/bg/bg-intro.webp" type="image/webp">
+          <img src="./img/bg/bg-intro.png" alt="background image">
+        </picture>
+      </div>
+    </section>
+    <section class="wr-works">
+      <div class="container">
+        <div class="row flex-column align-items-center">
+          <h2 class="main-title">Как это работает?</h2>
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="amateur-tab" data-toggle="tab" href="#amateur" role="tab" aria-controls="amateur" aria-selected="true">Для фотолюбителей</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="professional-tab" data-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">Для фотографов</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="amateur" role="tabpanel" aria-labelledby="amateur-tab">
+              <ul class="d-flex justify-content-between align-items-start">
+                <li class="d-flex flex-column justify-content-between align-items-center">
+                  <h3 class="content-title">1. Выбираете фото</h3>
+                  <p>У нас большой выбор фотографов и их прекрасных фотографий</p>
+                </li>
+                <li class="d-flex flex-column justify-content-between align-items-center">
+                  <h3 class="content-title">2. Оплачиваете</h3>
+                  <p>Также у нас куча способов как это оплатить</p>
+                </li>
+                <li class="d-flex flex-column justify-content-between align-items-center">
+                  <h3 class="content-title">3. Получаете заказ</h3>
+                  <p>Уже через 2 дня распечатанные фото окажутся у вас в руках</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="professional" role="tabpanel" aria-labelledby="professional-tab">
+              <ul class="d-flex justify-content-between align-items-center">
+                <li class="d-flex flex-column justify-content-between align-items-center">
+                  <h3 class="content-title">1. Делаете фото</h3>
+                  <p>У нас большой выбор фотографов и их прекрасных фотографий</p>
+                </li>
+                <li class="d-flex flex-column justify-content-between align-items-center">
+                  <h3 class="content-title">2. Загружаете</h3>
+                  <p>Также у нас куча способов как это оплатить</p>
+                </li>
+                <li class="d-flex flex-column justify-content-between align-items-center">
+                  <h3 class="content-title">3. Получаете деньги</h3>
+                  <p>Уже через 2 дня распечатанные фото окажутся у вас в руках</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="video-container">
+            <video id="video" class="video" loop poster="./img/video/video-poster.png">
+              <source src="./img/video/video.mp4" type="video/mp4">
+            </video>
+            <div class="controls">
+              <progress id="progress" max="100" value="0"></progress>
+              <div class="buttons">
+                  <button id="play-pause" class="play-pause"></button>
+                  <button id="stop" class="stop"></button>
+                  <button id="mute" class="mute"></button>
+              </div>
+            </div>
+            <button class="btn-play-main">
+              <img srcset="./img/video/play_2x.png 2x ,./img/video/play_3x.png 3x" src="./img/video/play.png" alt="logotype">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wr-feedback">
+      <div class="container">
+        <div class="row flex-column align-items-center">
+          <h2 class="main-title">Отзывы</h2>
+          <p class="subtitle">Для нашей компании самое важное – это общечеловеческие ценности и высокий уровень сервиса</p>
+          <ul class="feedback d-flex justify-content-between align-items-start">
+            <li class="feedback__item">
+              <p class="feedback__text">Спасибо большое за помощь и содействие!</p>
+              <div class="feedback__author d-flex align-items-center">
+                <img class="feedback__author-avatar" srcset="./img/feedback/people1_2x.png 2x ,./img/feedback/people1_3x.png 3x" src="./img/feedback/people1.png" alt="feedback avatar">
+                <div class="feedback__author-info">
+                  <span class="feedback__author-name">Александра Селезнева</span>
+                  <span class="feedback__author-status">фотограф</span>
+                </div>
+              </div>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__text">Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!</p>
+              <div class="feedback__author d-flex align-items-center">
+                <img class="feedback__author-avatar" srcset="./img/feedback/people2_2x.png 2x ,./img/feedback/people2_3x.png 3x" src="./img/feedback/people2.png" alt="feedback avatar">
+                <div class="feedback__author-info">
+                  <span class="feedback__author-name">Лиза Семяновская</span>
+                  <span class="feedback__author-status">фотолюбитель</span>
+                </div>
+              </div>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__text">Это супер крутая инструкция и вы делаете очень полезную вещь 🙂 Спасибо ❤️</p>
+              <div class="feedback__author d-flex align-items-center">
+                <img class="feedback__author-avatar" srcset="./img/feedback/people3_2x.png 2x ,./img/feedback/people3_3x.png 3x" src="./img/feedback/people3.png" alt="feedback avatar">
+                <div class="feedback__author-info">
+                  <span class="feedback__author-name">Юрий Ставничий</span>
+                  <span class="feedback__author-status">фотограф</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <picture>
+        <source srcset="./img/bg/bg-feedback_2x.webp 1x,
+        ./img/bg/bg-feedback_2x.webp 2x, ./img/bg/bg-feedback_2x.webp 3x" type="image/webp">
+        <img class="feedback__bg" srcset="./img/bg/bg-feedback_2x.png 2x, ./img/bg/bg-feedback_3x.png 3x" src="./img/bg/bg-feedback.png" alt="background image">
+      </picture>
+    </section>
+    <section class="wr-benefits">
+        <div class="container">
+          <div class="row flex-column align-items-center">
+            <h2 class="main-title">Преимущества</h2>
+            <div class="benefits d-flex justify-content-between align-items-center">
+              <div class="col-6">
+                <div class="benefit benefit__bg benefit__bg_1 d-flex justify-content-between flex-column">
+                  <a href="#" class="benefit__link"></a>
+                  <h3 class="benefit__title">Защита лицензионным соглашением</h3>
+                  <span class="benefit__btn">Узнать больше</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="benefit benefit__bg benefit__bg_2 d-flex justify-content-between flex-column">
+                  <a href="#" class="benefit__link"></a>
+                  <h3 class="benefit__title">Быстрая и качественная печать</h3>
+                  <span class="benefit__btn">Узнать больше</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="wr-gallery">
+      <div class="container">
+        <div class="row flex-column align-items-center">
+          <h2 class="main-title">5000 фотографов уже с нами</h2>
+        </div>
+        <div class="gallery__slider">
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg1">
+                <img class="slide__avatar" srcset="./img/slider/people1_2x.png 2x ,./img/slider/people1_3x.png 3x"
+                  src="./img/slider/people1.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Александра Селезнева</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg2">
+                <img class="slide__avatar" srcset="./img/slider/people2_2x.png 2x ,./img/slider/people2_3x.png 3x"
+                  src="./img/slider/people2.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Виктор Кострицкий</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg3">
+                <img class="slide__avatar" srcset="./img/slider/people3_2x.png 2x ,./img/slider/people3_3x.png 3x"
+                  src="./img/slider/people3.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Юрий Ставничий</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg1">
+                <img class="slide__avatar" srcset="./img/slider/people1_2x.png 2x ,./img/slider/people1_3x.png 3x"
+                  src="./img/slider/people1.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Александра Селезнева</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg2">
+                <img class="slide__avatar" srcset="./img/slider/people2_2x.png 2x ,./img/slider/people2_3x.png 3x"
+                  src="./img/slider/people2.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Виктор Кострицкий</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg3">
+                <img class="slide__avatar" srcset="./img/slider/people3_2x.png 2x ,./img/slider/people3_3x.png 3x"
+                  src="./img/slider/people3.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Юрий Ставничий</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg1">
+                <img class="slide__avatar" srcset="./img/slider/people1_2x.png 2x ,./img/slider/people1_3x.png 3x"
+                  src="./img/slider/people1.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Александра Селезнева</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg2">
+                <img class="slide__avatar" srcset="./img/slider/people2_2x.png 2x ,./img/slider/people2_3x.png 3x"
+                  src="./img/slider/people2.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Виктор Кострицкий</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__container">
+            <div class="slide">
+              <a class="slide__link" href="#"></a>
+              <div class="slide__cover slide_bg3">
+                <img class="slide__avatar" srcset="./img/slider/people3_2x.png 2x ,./img/slider/people3_3x.png 3x"
+                  src="./img/slider/people3.png" alt="feedback avatar">
+              </div>
+              <div class="slide__info">
+                <div class="slide__title">Юрий Ставничий</div>
+                <div class="slide__content">130 фотографий</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wr-signup">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="wr-form">
+              <h2 class="main-title">Хочешь у нас разместиться?</h2>
+              <form class="form" method="POST">
+                <div class="form__item">
+                  <input class="form__area" type="text" required autocomplete="off" id="form-email">
+                  <label class="form__label" for="form-email" title="Ваша почта" data-title="Ваша почта">
+                </div>
+                <div class="btns-container">
+                  <button type="submit">
+                    Хочу разместиться
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="wr-signup__bg">
+            <picture>
+              <source srcset="./img/bg/bg-signup.webp 1x,
+              ./img/bg/bg-signup_2x.webp 2x, ./img/bg/bg-signup_3x.webp 3x" type="image/webp">
+              <img class="wr-signup__bg-image" srcset="./img/bg/bg-signup_2x.jpg 2x, ./img/bg/bg-signup_3x.jpg 3x" src="./img/bg/bg-signup.jpg" alt="background image">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wr-faq">
+      <div class="container">
+        <div class="row flex-column align-items-center">
+          <h2 class="main-title">Вопросы и ответы</h2>
+          <div id="accordion" class="faq col col-lg-8">
+            <div class="faq__item">
+              <button class="faq__btn d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Как это работает?
+                <span class="faq__btn-icon"></span>
+              </button>      
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="faq__content">
+                  Нет. Из-за низкой стоимости работ нельзя поменять договор или отдельные условия сервиса.            </div>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__btn d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Можно ли изменить условия?
+                <span class="faq__btn-icon"></span>
+              </button>      
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="faq__content">
+                  Нет. Из-за низкой стоимости работ нельзя поменять договор или отдельные условия сервиса.            </div>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__btn d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                Сколько мне заплатят за фотографии?
+                <span class="faq__btn-icon"></span>
+              </button>      
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="faq__content">
+                  Нет. Из-за низкой стоимости работ нельзя поменять договор или отдельные условия сервиса.            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-start justify-content-between">
+          <p class="footer__copyright col-lg-3">© 2020 insprint</p>
+          <ul class="footer__menu col-lg-3">
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Как это работает?</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Фотографы</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Цены</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка и оплата</a></li>
+          </ul>
+          <ul class="footer__contact col-lg-3">
+            <li class="footer__contact-item"><a href="info@insprint.co" class="footer__contact-link">info@insprint.co</a></li>
+            <li class="footer__contact-item">
+              <a href="tel:+7 (916) 857 89 78" class="footer__contact-link">+7 (916) 857 89 78</a></li>
+          </ul>
+          <ul class="footer__social d-flex align-items-center col-lg-3">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-insta d-flex align-items-center justify-content-center">
+                <svg class="footer__social-icon">
+                  <use xlink:href="./svg/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-fb d-flex align-items-center justify-content-center">
+                <svg class="footer__social-icon">
+                  <use xlink:href="./svg/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-vk d-flex align-items-center justify-content-center">
+                <svg class="footer__social-icon">
+                  <use xlink:href="./svg/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-twitter d-flex align-items-center justify-content-center">
+                <svg class="footer__social-icon">
+                  <use xlink:href="./svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

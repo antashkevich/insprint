@@ -1,0 +1,55 @@
+.wr-faq {
+    padding: 6.5rem 0;
+    .main-title {
+        margin-bottom: 53px;
+    }
+}
+.faq {
+    background-color: #FFF;
+    border-radius: 16px;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
+    padding: 0;
+    &__item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        &:last-child {
+            border: none;
+        }
+    }
+    &__btn {
+        font-family: 'GilroySemiBold';
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        width: 100%;
+        transition: .35s ease;
+        padding: 26px 32px 12px;
+        &-icon {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../svg/sprite.svg#minus");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40px;
+        }
+        &.collapsed {
+            padding-bottom: 26px;
+            .faq__btn-icon {
+                background-image: url("../svg/sprite.svg#plus");
+    
+            }
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__content {
+        font-family: 'GilroyMed';
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: rgba(0, 0, 0, 0.6);
+        padding: 0 32px 26px;
+    }
+}

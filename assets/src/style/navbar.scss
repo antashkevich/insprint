@@ -1,0 +1,20 @@
+.navbar {
+    padding: 0;
+    &.navbar-expand-lg {
+        .nav-link {
+            padding: 0;
+        }
+    }
+    .nav-link {
+        font-family: 'GilroyMed';
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .nav-item {
+        transition: .4s;
+        margin: 0 6px 0 18px;
+        &:hover {
+            opacity: .6;
+        }
+    }
+}

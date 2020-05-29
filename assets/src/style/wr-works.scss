@@ -1,0 +1,49 @@
+.wr-works {
+    background-color: #FFF8EE;
+    padding: 6.5rem 0 6.8rem 0;
+    .main-title {
+        margin-bottom: 25px;
+    }
+    .nav-tabs {
+        width: 100%;
+        border: none;
+        margin-bottom: 80px;
+        .nav-item {
+            max-width: 233px;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .nav-link {
+            font-family: 'GilroySemiBold';
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.4);
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,.2);
+            padding: 18px 0 19px 0;
+            &.active {
+                color: #496ADC;
+                background-color: transparent;
+                border-bottom: 2px solid #496ADC;
+                padding: 18px 0;
+            }
+        }
+    }
+    .tab-content {
+        width: 100%;
+        padding: 0 23px;
+        margin-bottom: 80px;
+        li {
+            max-width: 327px;
+            text-align: center;
+        }
+        p {
+            line-height: 24px;
+            margin: 0;
+        }
+    }
+    .content-title {
+        margin-bottom: 5px;
+    }
+}
