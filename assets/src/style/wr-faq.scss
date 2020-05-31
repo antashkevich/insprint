@@ -1,55 +1,85 @@
-.wr-faq {
-    padding: 6.5rem 0;
-    .main-title {
-        margin-bottom: 53px;
-    }
-}
-.faq {
-    background-color: #FFF;
-    border-radius: 16px;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
-    padding: 0;
-    &__item {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-        &:last-child {
-            border: none;
+@media all and (min-width: 320px) {
+    .wr-faq {
+        padding: 3.5rem 15px;
+        .main-title {
+            margin-bottom: 40px;
         }
     }
-    &__btn {
-        font-family: 'GilroySemiBold';
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.01em;
-        text-align: left;
-        width: 100%;
-        transition: .35s ease;
-        padding: 26px 32px 12px;
-        &-icon {
-            display: block;
-            width: 24px;
-            height: 24px;
-            background-image: url("../svg/sprite.svg#minus");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 40px;
-        }
-        &.collapsed {
-            padding-bottom: 26px;
-            .faq__btn-icon {
-                background-image: url("../svg/sprite.svg#plus");
-    
+    .faq {
+        background-color: #FFF;
+        border-radius: 16px;
+        box-shadow: $primary-shadow;
+        padding: 0;
+        &__item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            &:last-child {
+                border: none;
             }
         }
-        &:focus {
-            outline: none;
+        &__btn {
+            font-family: 'GilroySemiBold';
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            text-align: left;
+            width: 100%;
+            transition: .35s ease;
+            padding: 16px 15px 6px;
+            &-icon {
+                display: block;
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+                background-image: url("../svg/sprite.svg#minus");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 40px;
+            }
+            &.collapsed {
+                padding-bottom: 16px;
+                .faq__btn-icon {
+                    background-image: url("../svg/sprite.svg#plus");
+        
+                }
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        &__content {
+            font-family: GilroyMed;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: .01em;
+            color: $primary-color;
+            padding: 0 15px 16px;
         }
     }
-    &__content {
-        font-family: 'GilroyMed';
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.01em;
-        color: rgba(0, 0, 0, 0.6);
-        padding: 0 32px 26px;
+}
+
+@media all and (min-width: 992px) {
+    .wr-faq {
+        padding: 6.5rem 0;
+        .main-title {
+            margin-bottom: 53px;
+        }
+    }
+    .faq {
+        &__btn {
+            font-size: 24px;
+            padding: 26px 32px 12px;
+            &-icon {
+                width: 24px;
+                height: 24px;
+            }
+            &.collapsed {
+                padding-bottom: 26px;
+            }
+        }
+        &__content {
+            font-size: 24px;
+            line-height: 28px;
+            padding: 0 32px 26px;
+        }
     }
 }

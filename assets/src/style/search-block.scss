@@ -1,10 +1,13 @@
 .search-block {
     transition: .4s;
     padding: 0;
+    button {
+        display: flex;
+    }
     &__icon {
         width: 24px;
         height: 24px;
-        margin-right: 10px;
+        margin-right: 8px;
     }
     &__title {
         font-weight: 600;

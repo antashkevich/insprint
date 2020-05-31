@@ -1,0 +1,32 @@
+.modal-content {
+    font-family: GilroyMed;
+    font-size: 18px;
+    color: $primary-color;
+}
+.modal-body {
+    display: flex;
+}
+.form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-append {
+    &__btn {
+        border: 1px solid #ced4da;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    &__svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+.modal-footer {
+    .btn {
+        color: #fff;
+        background-color: #496adc;
+    }
+}

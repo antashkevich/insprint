@@ -1,50 +1,98 @@
-.wr-feedback {
-    position: relative;
-    padding-top: 6.5rem;
-    .main-title {
-        margin-bottom: 28px;
+@media all and (min-width: 320px) {
+    .wr-feedback {
+        position: relative;
+        padding: 3.5rem 0;
+        .main-title {
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            margin-bottom: 40px;
+        }
+        .row {
+            padding-bottom: 0;
+        }
     }
-    .subtitle {
-        margin-bottom: 80px;
-    }
-    .row {
-        padding-bottom: 6.5rem;
+
+    .feedback {
+        padding: 0 15px;
+        &__text {
+            font-family: 'GilroyMed';
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        &__item {
+            flex-basis: 30%;
+            width: 100%;
+            background-color: #FFF;
+            box-shadow: $primary-shadow;
+            border-radius: 16px;
+            padding: 20px 22px;
+            margin-bottom: 20px;
+        }
+        &__author {
+            &-avatar {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin-right: 16px;
+            }
+            &-name {
+                font-family: 'GilroySemiBold';
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &-status  {
+                font-family: 'GilroyMed';
+                font-size: 14px;
+                color: $primary-color;
+                line-height: 20px;
+            }
+        }
+        &__bg {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -10;
+        }
     }
 }
 
-.feedback {
-    &__text {
-        font-family: 'GilroyMed';
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 62px;
-    }
-    &__item {
-        flex-basis: 30%;
-        background-color: #FFF;
-        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
-        border-radius: 16px;
-        padding: 30px 32px;
-    }
-    &__author {
-        &-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            margin-right: 16px;
+@media all and (min-width: 992px) {
+    .wr-feedback {
+        padding: 6.5rem 0 0;
+        .main-title {
+            margin-bottom: 28px;
         }
-        &-name {
-            font-family: 'GilroySemiBold';
-            font-size: 18px;
-            line-height: 24px;
+        .subtitle {
+            margin-bottom: 80px;
         }
-        &-status  {
-            font-family: 'GilroyMed';
-            font-size: 15px;
-            line-height: 20px;
+        .row {
+            padding-bottom: 6.5rem;
         }
     }
-    &__bg {
-        width: 100%;
+    .feedback {
+        padding: 0;
+        &__text {
+            font-size: 24px;
+            margin-bottom: 62px;
+        }
+        &__item {
+            width: auto;
+            padding: 30px 32px;
+            margin-bottom: 0;
+        }
+        &__author {
+            &-name {
+                font-size: 18px;
+            }
+            &-status  {
+                font-size: 14px;
+            }
+        }
+        &__bg {
+            position: static;
+        }
     }
 }

@@ -77,7 +77,7 @@ gulp.task('css:build', function () {
         .pipe(plumber()) // для отслеживания ошибок
         .pipe(sourcemaps.init()) // инициализируем sourcemap
         .pipe(sass()) // scss -> css
-        .pipe(autoprefixer()) // добавим префиксы
+        .pipe(autoprefixer('last 3 versions')) // добавим префиксы
         .pipe(gulp.dest(path.build.css))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS()) // минимизируем CSS

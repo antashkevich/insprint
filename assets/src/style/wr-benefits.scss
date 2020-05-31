@@ -1,62 +1,92 @@
-.wr-benefits {
-    background-color: #496ADC;
-    position: relative;
-    padding: 6.5rem 0;
-    .main-title {
-        color: #fff;
-        margin-bottom: 67px;
+@media all and (min-width: 320px) {
+    .wr-benefits {
+        background-color: #496ADC;
+        position: relative;
+        padding: 3.5rem 0;
+        .main-title {
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        .subtitle {
+            margin-bottom: 40px;
+        }
     }
-    .subtitle {
-        margin-bottom: 80px;
+    .benefits {
+        width: 100%;
+    }
+    .benefit {
+        border-radius: 16px;
+        min-height: 200px;
+        position: relative;
+        box-sizing: border-box;
+        transition: .4s;
+        margin-bottom: 20px;
+        padding: 22px;
+        &__bg {
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: cover;
+            &_1 {
+                background-color: #FFF;
+                background-image: url("../img/bg/bg-benefit1.png");
+            }
+            &_2 {
+                background-color: #FAD192;
+                background-image: url("../img/bg/bg-benefit2.png");
+            }
+        }
+        &__link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        &__title {
+            font-family: 'GilroySemiBold';
+            font-size: 24px;
+            line-height: 30px;
+            max-width: 56%;
+        }
+        &__btn {
+            font-family: 'GilroySemiBold';
+            font-size: 18px;
+            line-height: 24px;
+            color: #496ADC;
+        }
+        &:hover {
+            box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+            .benefit__btn {
+                text-decoration: underline;
+            }
+        }
     }
 }
-.benefits {
-    width: 100%;
-}
-.benefit {
-    border-radius: 16px;
-    min-height: 280px;
-    position: relative;
-    box-sizing: border-box;
-    transition: .4s;
-    padding: 32px;
-    &__bg {
-        background-repeat: no-repeat;
-        background-position: right top;
+
+@media all and (min-width: 340px) {
+    .benefit__bg {
         background-size: contain;
-        &_1 {
-            background-color: #FFF;
-            background-image: url("../img/bg/bg-benefit1.png");
+    }
+}
+
+@media all and (min-width: 992px) {
+    .wr-benefits {
+        padding: 6.5rem 0;
+        .main-title {
+            margin-bottom: 67px;
         }
-        &_2 {
-            background-color: #FAD192;
-            background-image: url("../img/bg/bg-benefit2.png");
+        .subtitle {
+            margin-bottom: 80px;
         }
     }
-    &__link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
-    }
-    &__title {
-        font-family: 'GilroySemiBold';
-        font-size: 32px;
-        line-height: 36px;
-        max-width: 56%;
-    }
-    &__btn {
-        font-family: 'GilroySemiBold';
-        font-size: 18px;
-        line-height: 24px;
-        color: #496ADC;
-    }
-    &:hover {
-        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
-        .benefit__btn {
-            text-decoration: underline;
+    .benefit {
+        min-height: 280px;
+        padding: 32px;
+        margin-bottom: 0;
+        &__title {
+            font-size: 32px;
+            line-height: 36px;
         }
     }
 }

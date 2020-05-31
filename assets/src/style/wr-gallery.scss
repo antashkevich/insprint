@@ -1,99 +1,140 @@
-.wr-gallery {
-    position: relative;
-    padding: 6.5rem 0 6rem;
-    .main-title {
-        margin-bottom: 56px;
-    }
-    .slick-disabled {
-        display: none !important;
-    }
-    .slick-next, 
-    .slick-prev {
-        z-index: 20;
-        &:before {
-            content: none;
+@media all and (min-width: 320px) {
+    .wr-gallery {
+        position: relative;
+        padding: 3.5rem 0 3rem;
+        .main-title {
+            margin-bottom: 40px;
+        }
+        .slick-disabled {
+            display: none !important;
+        }
+        .slick-next, 
+        .slick-prev {
+            z-index: 20;
+            &:before {
+                content: none;
+            }
+        }
+        .slick-arrow {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: #FFf;
+            box-shadow: $primary-shadow;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 24px;
+        }
+        .slick-next {
+            right: -10px;
+            background-image: url("../svg/sprite.svg#arrow");
+        }
+        .slick-prev {
+            left: -10px;
+            background-image: url("../svg/sprite.svg#arrow");
+            transform: rotate(180deg) translateY(32px);
         }
     }
-    .slick-arrow {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        background-color: #FFf;
-        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 24px;
-    }
-    .slick-next {
-        background-image: url("../svg/sprite.svg#arrow");
-    }
-    .slick-prev {
-        background-image: url("../svg/sprite.svg#arrow");
-        transform: rotate(180deg);
+
+    .slide {
+        background-color: #FFF;
+        box-shadow: $primary-shadow;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        transition: .4s;
+        margin: 15px;
+        &__container {
+            &:focus {
+                outline: none;
+            }
+        }
+        &__link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        &__cover {
+            height: 180px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &_bg1 {
+            background-image: url("../img/slider/slide1.png");
+        }
+        &_bg2 {
+            background-image: url("../img/slider/slide2.png");
+        }
+        &_bg3 {
+            background-image: url("../img/slider/slide3.png");
+        }
+        &__avatar {
+            width: 86px;
+            height: 86px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -19px;
+            left: 50px;
+        }
+        &__info {
+            padding: 20px 10px 20px 20px;
+        }
+        &__title {
+            font-family: 'GilroySemiBold';
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 4px;
+        }
+        &__content {
+            font-family: 'GilroyMed';
+            font-size: 16px;
+            line-height: 24px;
+            color: $primary-color;
+        }
+        &:hover {
+            box-shadow: 0 2px 16px rgba(0,0,0,.5);
+        }
     }
 }
 
-.slide {
-    background-color: #FFF;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    transition: .4s;
-    margin: 15px;
-    &__container {
-        &:focus {
-            outline: none;
+@media all and (min-width: 567px) {
+    .wr-gallery {
+        .slick-next {
+            right: -25px;
+        }
+        .slick-prev {
+            left: -25px;
         }
     }
-    &__link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
+}
+
+@media all and (min-width: 992px) {
+    .wr-gallery {
+        padding: 6.5rem 0 6rem;
+        .main-title {
+            margin-bottom: 56px;
+        }
     }
-    &__cover {
-        height: 240px;
-        position: relative;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    &_bg1 {
-        background-image: url("../img/slider/slide1.png");
-    }
-    &_bg2 {
-        background-image: url("../img/slider/slide2.png");
-    }
-    &_bg3 {
-        background-image: url("../img/slider/slide3.png");
-    }
-    &__avatar {
-        width: 86px;
-        height: 86px;
-        border-radius: 50%;
-        position: absolute;
-        bottom: -19px;
-        left: 29px;
-    }
-    &__info {
-        padding: 32px;
-    }
-    &__title {
-        font-family: 'GilroySemiBold';
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 4px;
-    }
-    &__content {
-        font-family: 'GilroyMed';
-        font-size: 18px;
-        line-height: 24px;
-        color: rgba(0, 0, 0, 0.6);
-    }
-    &:hover {
-        box-shadow: 0 2px 16px rgba(0,0,0,.5);
+    .slide {
+        &__cover {
+            height: 240px;
+        }
+        &__avatar {
+            left: 29px;
+        }
+        &__info {
+            padding: 32px 10px 32px 32px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__content {
+            font-size: 18px;
+        }
     }
 }
